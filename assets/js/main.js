@@ -7,7 +7,7 @@
 const CONFIG = {
   // Main booking number in international format, digits only (no + or spaces)
   waNumber:  '916238147823',
-  // Second number shown as a call option
+  // Second WhatsApp contact number
   waNumber2: '919544454298',
   // Countdown target — ISO date/time with your timezone offset.
   // 17 October, 4:00 PM, Saudi time (UTC+3) = 2026-10-17T16:00:00+03:00
@@ -177,55 +177,6 @@ const $$ = (sel, ctx = document) => Array.from(ctx.querySelectorAll(sel));
     let win = null;
     try { win = window.open(shareLink, '_blank'); } catch (_) { win = null; }
     if (win) { try { win.opener = null; } catch (_) {} } else { location.href = shareLink; }
-  });
-})();
-
-/* ---------- 7. booking form → WhatsApp ---------- */
-(() => {
-  const form = $('[data-book-form]');
-  if (!form) return;
-  const status = $('.form-status', form);
-
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    if (!form.reportValidity()) return;
-
-    const data = new FormData(form);
-    const name  = (data.get('name') || '').toString().trim();
-    const phone = (data.get('phone') || '').toString().trim();
-    const people= (data.get('people') || '').toString();
-    const pass  = (data.get('pass') || '').toString();
-    const days  = (data.get('days') || '').toString();
-    const notes = (data.get('notes') || '').toString().trim();
-
-    const lines = [
-      '*STRANGERS CAMPING — Booking request*',
-      `Event: ${CONFIG.eventLabel}`,
-      '',
-      `Name: ${name}`,
-      `Phone: ${phone}`,
-      `Guests: ${people}`,
-      `Pass: ${pass}`,
-      `Attending: ${days}`,
-      notes ? `Notes: ${notes}` : null,
-      '',
-      'Please confirm my spot. Thank you!'
-    ].filter(Boolean);
-
-    const message = lines.join('\n');
-    const wa      = WA.buildLink(CONFIG.waNumber, message);
-
-    // on a phone this hands straight over to the WhatsApp app; on desktop it opens the chat
-    const opened = WA.open(CONFIG.waNumber, message);
-
-    if (status) {
-      status.hidden = false;
-      status.innerHTML = opened
-        ? 'WhatsApp is opening with your booking details — just press send. ' +
-          `<a href="${wa}" target="_blank" rel="noopener">Didn't open? Tap here.</a>`
-        : 'WhatsApp couldn\'t open automatically, so we\'ve put everything here for you.';
-    }
-    form.reset();
   });
 })();
 
