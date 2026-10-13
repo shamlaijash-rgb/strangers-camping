@@ -501,98 +501,23 @@
 
 <div class="divider" style="background:#FFF8EC"><svg viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path fill="#0E2A1C" d="M0 80V46L150 16l150 36L460 14l160 36L780 18l160 34 160-36 140 26 200-20v42H0Z"/></svg></div>
 
-<!-- ============ BOOKING ============ -->
+<!-- ============ WHATSAPP CONTACT ============ -->
 <section class="section dark" id="book">
-  <div class="wrap split" style="align-items:start">
+  <div class="wrap center">
     <div class="reveal">
-      <span class="eyebrow">Booking</span>
-      <h2 class="display">Save your tent<br><span class="amber-text">for 17 / 18 October</span></h2>
-      <p class="lead">
-        Fill the short form and we'll open WhatsApp with everything ready to send —
-        no copy-pasting, no waiting on hold.
-      </p>
-
-      <ul class="side-list">
-        <li>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg>
-          <span><strong>1. Send the request.</strong> Your details land straight in our WhatsApp.</span>
-        </li>
-        <li>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg>
-          <span><strong>2. We confirm.</strong> Pass price, payment step and your tent slot.</span>
-        </li>
-        <li>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg>
-          <span><strong>3. You get the camp pack.</strong> Location pin, packing list and the group invite.</span>
-        </li>
-      </ul>
-
-      <div class="phone-row" style="justify-content:flex-start;margin-top:2rem">
-        <a class="btn btn--ghost" href="tel:+916238147823">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-phone"/></svg>
-          +91 6238 147 823
+      <span class="eyebrow eyebrow--center">Get in touch</span>
+      <h2 class="display">See you at the campfire<br><span class="amber-text">17 / 18 October</span></h2>
+      <p class="lead" style="max-width:56ch;margin-inline:auto">Want to join us or ask a question? Tap either number to chat directly with our team on WhatsApp.</p>
+      <div class="phone-row" style="margin-top:2rem">
+        <a class="btn btn--wa btn--lg" href="https://api.whatsapp.com/send?phone=916238147823&amp;text=Hi!%20I'd%20like%20to%20know%20more%20about%20Strangers%20Camping%20(17%2F18%20October)." data-wa data-message="Hi! I'd like to know more about Strangers Camping (17/18 October)." target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
+          WhatsApp +91 6238 147 823
         </a>
-        <a class="btn btn--ghost" href="tel:+919544454298">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-phone"/></svg>
-          95444 54298
+        <a class="btn btn--wa btn--lg" href="https://api.whatsapp.com/send?phone=919544454298&amp;text=Hi!%20I'd%20like%20to%20know%20more%20about%20Strangers%20Camping%20(17%2F18%20October)." data-wa data-message="Hi! I'd like to know more about Strangers Camping (17/18 October)." target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
+          WhatsApp +91 95444 54298
         </a>
       </div>
-    </div>
-
-    <div class="form-card reveal reveal-d2">
-      <form data-book-form novalidate>
-        <div class="field">
-          <label for="f-name">Full name</label>
-          <input id="f-name" name="name" type="text" placeholder="Your name" required autocomplete="name">
-        </div>
-        <div class="field">
-          <label for="f-phone">WhatsApp number</label>
-          <input id="f-phone" name="phone" type="tel" placeholder="+91 00000 00000" required autocomplete="tel">
-        </div>
-        <div class="grid grid--2" style="gap:0 1rem">
-          <div class="field">
-            <label for="f-people">Guests</label>
-            <select id="f-people" name="people" required>
-              <option value="1">Just me (1)</option>
-              <option value="2">2 people</option>
-              <option value="3">3 people</option>
-              <option value="4">4 people</option>
-              <option value="5+">5 or more</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="f-pass">Pass</label>
-            <select id="f-pass" name="pass" required>
-              <option>Full Camp Pass (2 days · 1 night)</option>
-              <option>Day Camper (Saturday only)</option>
-              <option>Camp Crew (group)</option>
-              <option>Not sure yet — advise me</option>
-            </select>
-          </div>
-        </div>
-        <div class="field">
-          <label for="f-days">Attending</label>
-          <select id="f-days" name="days" required>
-            <option>Both days (17 &amp; 18 October)</option>
-            <option>Only Day 1 — 17 October</option>
-            <option>Only Day 2 — 18 October</option>
-            <option>Still deciding</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="f-notes">Anything we should know? <span style="text-transform:none;letter-spacing:0;opacity:.7">(optional)</span></label>
-          <textarea id="f-notes" name="notes" placeholder="Food preferences, carpooling from a nearby city, bringing my own tent…"></textarea>
-        </div>
-
-        <button class="btn btn--wa btn--lg btn--block" type="submit">
-          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
-          Send booking request on WhatsApp
-        </button>
-
-        <p class="form-note">Your details aren't stored on this page — they open directly in WhatsApp. Prefer to talk?
-          Call <a href="tel:+916238147823">+91 6238 147 823</a> or <a href="tel:+919544454298">95444 54298</a>.</p>
-        <p class="form-status" hidden></p>
-      </form>
     </div>
   </div>
 </section>
@@ -660,7 +585,7 @@
       </details>
       <details>
         <summary>Do I need camping experience or gear?</summary>
-        <div class="faq__a"><p>None at all. We set up the camp, hand you a tent and show you how to pitch it. If you'd rather bring your own tent, that's welcome too — just mention it in the booking form.</p></div>
+        <div class="faq__a"><p>None at all. We set up the camp, hand you a tent and show you how to pitch it. If you'd rather bring your own tent, that's welcome too — just mention it on WhatsApp.</p></div>
       </details>
       <details>
         <summary>What should I pack?</summary>
@@ -668,7 +593,7 @@
       </details>
       <details>
         <summary>Is it safe? Are women campers okay?</summary>
-        <div class="faq__a"><p>Yes. The camp is supervised by coordinators all night, the site is private, and there are dedicated sleeping areas with women-only tent options available on request. Tell us in the booking form if you'd like that arrangement.</p></div>
+        <div class="faq__a"><p>Yes. The camp is supervised by coordinators all night, the site is private, and there are dedicated sleeping areas with women-only tent options available on request. Tell us on WhatsApp if you'd like that arrangement.</p></div>
       </details>
       <details>
         <summary>What if it rains or the camp is cancelled?</summary>
@@ -676,7 +601,7 @@
       </details>
       <details>
         <summary>How do I pay and hold my spot?</summary>
-        <div class="faq__a"><p>Message us on WhatsApp with the booking form and we'll share the pass price, the payment method and a confirmation. Spots are held on a first-confirmed basis, and tent numbers are limited for this date.</p></div>
+        <div class="faq__a"><p>Message us directly on WhatsApp and we'll share the pass price, the payment method and a confirmation. Spots are held on a first-confirmed basis, and tent numbers are limited for this date.</p></div>
       </details>
     </div>
   </div>
@@ -699,9 +624,9 @@
         <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
         WhatsApp +91 6238 147 823
       </a>
-      <a class="btn btn--ghost btn--lg" href="tel:+919544454298">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-phone"/></svg>
-        Call 95444 54298
+      <a class="btn btn--ghost btn--lg" href="https://api.whatsapp.com/send?phone=919544454298&amp;text=Hi!%20I'd%20like%20to%20know%20more%20about%20Strangers%20Camping%20(17%2F18%20October)." data-wa target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-wa"/></svg>
+        WhatsApp 95444 54298
       </a>
     </div>
   </div>
@@ -756,7 +681,7 @@
               WhatsApp 95444 54298
             </a>
           </li>
-          <li><a href="tel:+916238147823">Call +91 6238 147 823</a></li>
+          <li><a href="https://api.whatsapp.com/send?phone=916238147823&amp;text=Hi!%20I'd%20like%20to%20know%20more%20about%20Strangers%20Camping%20(17%2F18%20October)." data-wa target="_blank" rel="noopener">WhatsApp +91 6238 147 823</a></li>
           <li><a href="#book" class="link-arrow" style="border-color:#F7B733">Book your spot <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
         </ul>
       </div>
@@ -784,7 +709,7 @@
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><use href="#i-x"/></svg>
     </button>
 
-    <h3 id="waModalTitle" style="font-size:1.2rem">Open WhatsApp to finish your booking</h3>
+    <h3 id="waModalTitle" style="font-size:1.2rem">Chat with us on WhatsApp</h3>
     <p class="wa-modal__note" data-wa-reason>
       Your browser blocked the pop-up window. Use one of the options below — everything is already filled in.
     </p>
@@ -807,7 +732,7 @@
 
     <p class="wa-modal__alt">
       Second number: <a href="https://api.whatsapp.com/send?phone=919544454298" data-wa-num2 target="_blank" rel="noopener">95444 54298</a>
-      &nbsp;·&nbsp; <a href="tel:+916238147823">Call instead</a>
+      &nbsp;·&nbsp; <a href="https://api.whatsapp.com/send?phone=916238147823&amp;text=Hi!%20I'd%20like%20to%20know%20more%20about%20Strangers%20Camping%20(17%2F18%20October)." data-wa target="_blank" rel="noopener">WhatsApp instead</a>
     </p>
     <p class="wa-modal__status" data-wa-status hidden></p>
   </div>
