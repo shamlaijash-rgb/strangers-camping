@@ -1,0 +1,13 @@
+# macOS / Windows junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# editors
+.vscode/
+.idea/
+*.swp
+
+# local preview tools
+.cache/
+node_modules/
